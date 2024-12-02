@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
 const sequelize = require('../../config/database');
 
-const Authors = sequelize.define('authors', {
+const Authors =sequelize.define('authors', {
   id: {
     allowNull: false,
     autoIncrement: true,
@@ -11,10 +11,10 @@ const Authors = sequelize.define('authors', {
   username: {
     type: Sequelize.STRING,
   },
-  email: {
+  password: {
     type: Sequelize.STRING,
   },
-  password: {
+  email: {
     type: Sequelize.STRING,
   },
   createdAt: {
